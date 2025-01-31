@@ -1,0 +1,20 @@
+{
+  "action": "RECEIVE_ORDER",
+  "order": {
+    "number": "20250129-123456",
+    "items": [
+      {
+        "description": "Red Sneakers",
+        "quantity": 2,
+        "product": {
+          "sku": "SNK123456789",
+          "barcode": "987654321012",
+          "name": "Red Sneakers",
+          "description": "High-quality running shoes",
+          "thumbnailUrl": "https://cdn.example.com/images/sneakers.jpg",
+          "price": 25.12
+        }
+      }
+    ]
+  }
+}
