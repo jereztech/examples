@@ -67,9 +67,9 @@ public class OrderService extends BaseService<Order, OrderRepository> {
         }
 
         // Remove items that are no longer present
-        List<OrderItem> todDelete = (List<OrderItem>) subtract(existingItems, newItems);
-        if (isNotEmpty(todDelete)) {
-            orderItemService.deleteAll(todDelete);
+        List<OrderItem> toDelete = (List<OrderItem>) subtract(existingItems, newItems);
+        if (isNotEmpty(toDelete)) {
+            orderItemService.deleteAll(toDelete);
         }
 
         // Update items that remain
